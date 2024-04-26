@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    table{
+        width: 100%;
+       border-collapse: collapse;   /*  Every cell of table have border(rectangulr box), border-collapse:collapse means dont show its own border , it means only grid lines will appear */
+    }
+    td,th{
+        border: 1px solid;
+        text-align: center;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #5e5c5e;
+    }
+    h1{
+        width: 7000px;
+    }
+</style>
+<body>
+    <h1>Changing Heading Direction - Horizontal</h1>
+ <table>
+    <tr>
+       <th>country</th>
+       <th>country code</th>
+       <th>Email</th> 
+    </tr>
+    <tr>
+        <td>India</td>
+        <td>IN</td>
+        <td>india@google.com</td>
+</tr>
+ <tr>
+        <td>United State</td>
+        <td>US</td>
+        <td>us@google.com</td>
+</tr>
+ <tr>
+        <td>Canada</td>
+        <td>CN</td>
+        <td>canada@google.com</td>
+</tr>
+ <tr>
+        <td>China</td>
+        <td>CH</td>
+        <td>china@google.com</td>
+</tr>
+ </table>
+
+ <h1>Changing Heading Direction - vertical</h1>
+ <table>
+    <tr>
+        <th>Country</th>
+        <td>India</td>
+        <td>United State</td>
+        <td>Canada</td>
+        <td>China</td>
+    </tr>
+    <tr>
+        <th>Country Code</th>
+        <td>IN</td>
+        <td>US</td>
+        <td>CN</td>
+        <td>CH</td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>india@google.com</td>
+        <td>us@google.com</td>
+        <td>canada@google.com</td>
+        <td>china@google.com</td>
+    </tr>
+   </table>
+   <h1>Colgram :Not used now, low browser support   & {ColSpan Attribute of th(table heading) : Sharing Same heading to 2,3,4... columns data}</h1>
+<table>
+    <colgroup> 
+    <col span="2" style="background-color: blueviolet;">
+</colgroup>
+    <tr>
+        <th colspan="2" >Number</th>
+    </tr>
+    <tr>
+        <td>One</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Two</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Three</td>
+        <td>3</td>
+    </tr>
+   
+</table>
+
+
+
+</body>
+</html>

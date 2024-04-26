@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+   input{
+    margin: 30px;
+   }
+   </style>
+</head>
+<body>
+    <h1>Input Types In Html</h1>
+    <form action="" method="post"
+ enctype="text/plain" accept-charset="utf-16" autocomplete="off"   
+    >
+    <label for="fname">First Name :</label>  
+    <input type="text" name="" value="Dev" id="fname" placeholder="e.g tony" >
+ <br> 
+    <label for="lname">Last Name :</label>  
+    <input type="text" name="" value="Devi" id="lname" placeholder="e.g tony" >
+
+    <!-- <input type="reset" value="Reset"> -->
+<!-- Input Reset works as a button, on clicking it, it reset the value of the form -->
+
+<br>
+
+<label for="email">Email :</label>
+<input type="email" name="" id="email">
+<br>
+<label for="week">Select Week :</label>
+<input type="week" name="" id="week">  
+<!-- week gives a dropdown option where we can choose month,date,year and its tells   -->
+<br>
+
+ <select name="editors" id="" multiple>  <!--  multiple attribute is used to select multiple options, to select multiple options, we need to press ctrl while selecting -->
+   <option value="vscode">VsCode</option>
+   <option value="Sublime">Sublime</option>
+   <option value="Turbo">Turbo C++</option>
+   <option value="Dev">Dev</option>
+</select>
+<br>
+<!-- Below input way is not used currently ,rare-->
+<h1>Rarely used writing method </h1>
+<input list="editors" name="editor">
+<datalist id="editors">
+    <option value="vscode">vscode</option>
+    <option value="vs">vs</option>
+    <option value="code">code</option>
+</datalist>
+<br>
+<label for="range">Volume :</label>
+<input type="range" name="" id="range">
+<br>
+<label for="radio"></label>
+<input type="radio" name="" id="radio">
+<!-- Read more about radio -->
+
+</form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <style>
+        body{
+    background-color: #282626;
+    color: aliceblue;
+}
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML : </h1>
+   
+    <!-- In forms , when we submit , all the information in each element sumbit in backend(action tells us about backend like: <form action="/form.php" ) -->
+<form action="" method="get"
+ accept-charset="utf-16"  autocomplete="off"
+ enctype="multipart/form-data"  
+> 
+   <!--mostly we use method="post" means sending encrypted data to backend ,GET method is not encrypted ,for e.g :google front page where it takes content to be searched from user is decrypted information  -->
+<!--  # novalidate is also attribute in form which means without validating, checking the data , send it to backend, btt not used  -->
+<!-- # Accept-charset means which charset form is accepting
+# Enctype means which kind of data - e.g: plain text,images upload etc.  
+# autocomplete="off" means dont show autofill option -->
+
+<label for="fname">First Name :</label>  
+  <input type="text" name="" id="fname" placeholder="e.g tony" >
+
+    <!-- using lable is a good practice to use in addition with placeholder -->
+<!-- Keeping same id to input tag and label tag helps us to identify lable for input,when clicking on label , input area of that label gets higlighted -->
+
+<br>
+
+  <label for="lname">Last Name : </label>
+  <input type="text" placeholder="e.g Singh" id="lname" name="" >
+
+<br>
+
+<button type="submit" >Submit</button>
+
+     </form>
+</body>
+</html>
