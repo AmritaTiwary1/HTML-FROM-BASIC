@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        body{
+        background-color: #91d7fa;
+        color: rgb(15, 1, 1);
+        }
+/* Style for table section :*/
+        table{
+        width: 100%;
+       border-collapse: collapse;   /*  Every cell of table have border(rectangulr box), border-collapse:collapse means dont show its own border , it means only grid lines will appear */
+    }
+    td,th{
+        border: 1px solid;
+        text-align: center;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #5e5c5e;
+    }
+    h1{
+        width: 7000px;
+    }
+    /* end of Style for table section */
+
+    </style>
+</head>
+<body>
+<h1>Heading 1</h1>
+    <H2>HEADING 2</H2>
+    <H3>HEADING 3</H3>
+    <H4>HEADING 4</H4>
+    <H5>HEADING 5</H5>
+    <H6>HEADING 6</H6>
+
+    <!-- giving more than one space in between the para tag text will not reflect any change ie. single space will be there 
+ bt adding br tag will break the line -->
+    <p><h1>p tag</h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis voluptatem, totam omnis deleniti place
+        at commodi distinctio.
+         <hr>  <!-- this will give a line  -->
+        <br>
+        Aperiam numquam voluptatum 
+        cum, minus quam alias impedit!</p>
+<hr>
+
+ <!-- pre tag give as many space as we want -->
+ <pre><h1>pre tag</h1>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis voluptatem, totam omnis deleniti place
+        at commodi distinctio.
+        
+        Aperiam numquam voluptatum 
+        cum, minus quam alias impedit.
+ </pre> 
+ 
+ <hr>
+ <h1>a tag</h1>
+   <a href="https://www.google.com/" title="google link in same tab">GOOGLE</a>  
+<br>
+<a href="https://www.google.com/" target="_blank" rel="noopener noreferrer" title="google link in another tab">GOOGLE</a>
+<br>
+<h2>CLICK ON THIS IMAGE TO DOWNLOAD IMAGE</h2>
+<a href="shopJoyDownload.png" download><img src="shopJoyDownload.png" alt="pic" height="500" width="600"></a>
+<hr>
+<p> This is para :<b>Bold is used when you want to emphasis the content in website and strong is used to bold the word in html </b> </p>
+<p>This : <strong>Strong is used to make the word bold in html </strong> </p> 
+
+<p> This : <i> i tag make things slant</i></p>   
+<p> This : <em> em tag make things slant </em></p>  <!-- emphasis the thing -->
+
+<h1>ul li tag</h1>
+<ul>
+    <li>small tag</li>
+    <li>This : <i> i tag make things slant</i></li>
+    <li>This : <em> em tag make things slant </em></li>
+    <li>sub tag(subscript) , sup tag(superscript)</li>
+    <li>del(delete) , mark</li>
+    <li></li>
+</ul>
+
+<p>Using superscript , subscript H <sub>2</sub> O <sup>8</sup></p>
+<p> DEL TAG = OFFER : rs.20000 <del>30000</del></p>   <!-- ON browser :  OFFER : rs.20000 30000  -->
+
+<hr>
+<h1>STYLE ATTRIBUTE </h1>
+<h2 style="
+text-align: center;
+background-color: green;
+color: yellow;"
+ > STYLE attribute</h2>
+ <hr>
+ <pre>
+        
+    hex code value #2591c6;
+    direct color name : red;
+    hsl(125,74%,..) /hsla;
+    red-green-blue combination : rgb(37,145,45)
+
+ 
+ </pre>
+ <!-- 
+    hex code value #2591c6;
+    direct color name : red;
+    hsl(125,74%,..) /hsla
+    red-green-blue combination : rgb(37,145,45)
+
+  -->
+  <hr>
+  <h1>This is my blockquote</h1>
+    <!-- <blockquote cite="Elon" > cite tells SEO about the reference of the content -->
+        <!-- blockquote helps in SEO search engine -->
+    </blockquote>
+<hr>
+<h1>q tag : </h1>
+<q>
+This is my quote
+</q>
+<hr>
+<h1>abbr tag: Abbreviation Tag</h1>
+<abbr title="Javascript">JS</abbr>         <!-- By hovering on js text, we can see "javascript" -->
+
+<hr>
+<h1>Address Tag: </h1>
+<address>
+Written by Amrita<br>
+Visit us at:<br>
+Example.com<br>
+JHARKHAND, INDIA<br>
+USA
+</address>
+<!-- The HTML address tag is used to provide contact information for the author/owner of a document
+     or an article. It is typically used to provide contact information 
+     for the publisher or author of a web page, such as an email address, phone number, physical address, or website URL3. The element should be used to provide context-specific contact information relevant to the author of the current
+     site, page, document, section, or article -->
+
+<hr>
+<h1>cite tag </h1>
+<figure>
+<blockquote>
+  <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+</blockquote>
+<figcaption>
+  First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite> by George
+  Orwell (Part 1, Chapter 1).
+</figcaption>
+</figure>
+
+<!-- just focus on cite tag  -->
+
+<!-- output of above code --
+
+It was a bright cold day 
+in April, and the clocks
+were striking thirteen.
+
+First sentence in 
+Nineteen Eighty-Four {--- this is in italic font}
+by George Orwell (Part 1, Chapter 1). -->
+
+<hr>
+<h1>bdo tag : to change the direction of the element , especially used in dubai.. where people read from right to left</h1>
+<br>
+<h3>Real text : </h3>
+<p>THIS IS A TEXT</p>
+<h3>After changing direction</h3>
+<bdo dir="rtl"> THIS IS A TEXT</bdo>
+<hr>
+<h1>a Tag tel Attribute</h1>
+    <a href="tel:+100">Contact us : 100</a>
+<hr>
+<h1>a Tag tel Attribute : It open up phone app to make call </h1>
+<h2><a href="tel:+100">Contact us : 100</a> </h2>
+<hr>
+<h1>a Tag <span style="text-decoration: underline;">tel</span> Attribute : It open up phone app to make call </h1>
+<h2><a href="tel:+100">Contact us : 100</a> </h2>
+<hr>
+<h1>To open link in other tab</h1>
+<a target="_blank" href="https://google.com">Google</a>   <!-- https is imprtant otherwise - www.google.com will not work -->
+
+<hr>
+<h1>PARA SECTION :-</h1>
+<h2><a href="#para1">CLICK HERE TO READ PARA 1</a></h2>
+<br>
+<h2> <a href="#para2">CLICK HERE TO READ PARA 2</a></h2>
+<br>
+<h2><a href="#para3">CLICK HERE TO READ PARA 3</a></h2>
+<h1 id="para1">1.Para</h1>
+<p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo deleniti molestias fugiat, repellat rem vel rerum doloribus obcaecati porro nam doloremque, provident qui ipsum debitis quos excepturi hic! Ullam, quia illum beatae adipisci consequuntur cum eligendi fuga quaerat impedit, soluta ipsam dolores id voluptas nobis nihil eos, eius iste in non placeat ducimus quod cupiditate neque sequi! Voluptas a qui optio necessitatibus! Nihil, et beatae accusamus iusto amet odio voluptate soluta culpa! Provident illum quo facilis et, doloribus debitis ipsa repellendus, nostrum sapiente, soluta tempora pariatur. Ad, quas et. Dolorem praesentium repellendus ratione omnis et amet consectetur at dignissimos? Nihil laborum fugit tempore, minima sequi illo sed voluptate facere atque qui dolore aperiam consectetur id consequuntur error eligendi ab asperiores fugiat beatae doloribus et nisi ipsum quis. Quis deleniti cumque alias at, blanditiis quia laborum dolorem a quae porro dicta rem fugiat. Modi harum voluptatum nemo vitae non totam? Optio amet quisquam, ipsam fuga commodi placeat corporis qui esse adipisci delectus voluptatem dolore. Molestias, laborum repellat sequi voluptatibus, natus id optio quo unde voluptatum, laudantium nemo voluptatem saepe magnam facilis earum iure numquam! Voluptate assumenda officia enim suscipit quas est sequi delectus placeat totam! Perspiciatis at perferendis animi cumque eveniet repellat quia veniam debitis alias quo hic exercitationem sint accusantium obcaecati, dolor corporis a doloribus aperiam eius neque omnis. Eaque libero voluptatum voluptates, harum odit quis repellendus dolores eos inventore?</p>
+<h1 id="para2">2.Para</h1>
+<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi laborum dolor perferendis voluptates iure voluptatem neque. Sunt in reiciendis iusto omnis assumenda, ratione ad ab, doloribus natus corporis et obcaecati ut? Ullam quisquam explicabo fugiat veritatis, numquam hic quis doloremque maiores sit, impedit possimus sapiente quibusdam voluptatem illum, odit recusandae amet commodi eum temporibus quas corporis. Esse non commodi repellat rerum aliquid sapiente quo architecto et delectus quod voluptatem, nulla dignissimos ut ea amet eligendi ipsam distinctio cumque debitis nostrum, doloremque dolorem recusandae. Suscipit eum, eligendi fuga neque eos iure exercitationem nihil consequuntur nam error id dicta modi rem itaque. Accusamus quibusdam consectetur laboriosam suscipit incidunt at ullam quia fugiat facere nobis soluta vel, atque nostrum dolor, nam deserunt excepturi quo maxime! Fuga repudiandae facilis reiciendis obcaecati ipsum ex optio magnam sint corporis nobis, officiis perspiciatis maiores nostrum blanditiis cumque. Accusantium illum rem soluta reiciendis tempora, sunt ullam exercitationem voluptate tempore tenetur esse magnam aspernatur dicta repellat nam labore amet ab accusamus optio eum distinctio aut excepturi. Sint, ipsam quas! Minima, explicabo nihil amet consequuntur nemo qui iure ut consectetur, suscipit inventore beatae velit nulla sed sint alias quia porro tempora mollitia voluptatem quod doloribus quasi necessitatibus? Cum odit temporibus fuga molestiae, sapiente doloribus beatae sed dicta ex fugiat veniam reiciendis voluptatem assumenda dolore nulla quaerat libero quis! Deserunt quas dolores ad sunt accusamus ducimus architecto deleniti quo inventore! Voluptatem dolorem molestias nihil id, architecto perferendis suscipit animi aperiam nisi nostrum illo cumque provident aliquid dignissimos magnam necessitatibus nobis, distinctio ipsum debitis! Ex neque dolorem itaque maxime voluptas in libero? Eaque, ipsam nesciunt quibusdam facere omnis minima harum maiores expedita, quae beatae consequatur. Consequatur porro sit esse, rerum nesciunt sunt blanditiis totam nisi itaque corporis cumque ad quam magni, tempora ullam dolore nobis excepturi accusantium iste, laboriosam nulla quibusdam. Autem repellat nulla minus, aspernatur eum nostrum esse. Laboriosam possimus, repellat nulla eaque corrupti exercitationem quia, delectus incidunt dicta veritatis quod voluptates similique libero provident natus quas quis fugiat optio eum, sed quasi. Sed a quae debitis ratione aut suscipit, vitae quis dolore repudiandae. Ipsum doloremque nulla repellat tenetur ipsam iure ad iusto. Libero nulla, ab labore maxime, alias distinctio rerum quis nemo, perspiciatis possimus magnam tempore quia dignissimos consectetur sunt! Quisquam eius sint modi numquam, repudiandae excepturi, quod qui, ut et eveniet cum. Iusto quo dolorem in. Sint officiis dolores quis fuga, reiciendis adipisci iure impedit facilis blanditiis expedita, reprehenderit quasi placeat officia. Dolorum eligendi iure pariatur numquam nam fugiat iste explicabo inventore illum esse incidunt nihil temporibus molestias, magni iusto veritatis similique sapiente quaerat voluptate. Quaerat similique obcaecati incidunt eos quisquam, mollitia saepe neque dicta soluta qui autem rerum quis blanditiis modi minima dolor libero voluptatibus debitis dignissimos ullam?</p>
+<h1 id="para3">3.para</h1>
+<p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laboriosam accusamus explicabo reprehenderit. Aliquid saepe perferendis officiis omnis exercitationem illum voluptatem, quis dolorum blanditiis voluptatum praesentium odio harum error nesciunt dolor similique, ducimus non vitae quidem a iure rerum. Quas quibusdam est, id reiciendis laudantium corrupti, fuga ipsum minima doloremque voluptas eius ad reprehenderit accusantium incidunt cumque! Nihil delectus repellendus rerum sequi deserunt voluptas ex cumque molestias! Recusandae quis provident molestias, quidem sunt deleniti suscipit est obcaecati culpa harum alias reiciendis. Hic ipsam inventore atque at rerum reprehenderit blanditiis iusto pariatur vel quam dignissimos dolores doloribus maxime qui tempore facilis nam asperiores maiores quaerat laudantium et similique, quo expedita! Non ab voluptatum hic dolor quod ipsa officia doloremque esse alias labore praesentium repellendus repellat veritatis commodi fuga ducimus perspiciatis voluptatem qui, quo minima animi adipisci. Voluptatum incidunt quia dicta placeat, facere minus voluptatem officia. Nihil non praesentium perferendis dolorem quisquam iusto ipsam adipisci omnis molestias voluptate nisi soluta sed magnam iure dolor, repellendus quaerat consequatur unde quos ab? Quaerat, sunt. Provident eius mollitia iure minus veniam sequi voluptate, dolorum porro nobis eos quaerat. Voluptatibus debitis modi rerum quis omnis voluptate, ipsam asperiores suscipit voluptates soluta, enim mollitia voluptatem odit, ipsa quam ex consequatur a. Vero voluptatum repudiandae, alias, repellat fuga numquam, est ea dicta perferendis incidunt corrupti labore odio quis nostrum! Quisquam, ab suscipit reiciendis sunt, qui tenetur laboriosam facere magni distinctio ipsa autem cumque laudantium inventore corrupti, nulla dolore nobis eaque dicta officiis molestias harum ut quibusdam doloribus dolorem? Est veritatis amet eligendi laboriosam sit rem quam, repellat vel placeat qui magni esse quas provident cumque impedit, inventore earum molestias magnam libero ab quidem? Nesciunt quidem dicta temporibus harum, voluptate numquam sequi pariatur illo, recusandae molestiae repudiandae laboriosam praesentium esse perspiciatis commodi! Voluptas, vitae repudiandae! Magni, at odit illo molestiae esse alias adipisci assumenda dolor, eius aspernatur, atque numquam repellat cupiditate veniam voluptatem doloribus dignissimos maxime qui? Inventore iure voluptates asperiores voluptate nam minima error cumque! Quasi odit doloribus quod veritatis adipisci praesentium, esse, dicta illo ut ab repellat delectus, iusto voluptates. Quas alias magni incidunt provident saepe dicta deleniti quam sed repudiandae, nostrum, necessitatibus quo tempora at, id veritatis voluptas animi vitae et hic. Doloribus, minus? Fugiat quisquam repellendus perspiciatis in porro. Consectetur similique ducimus, laboriosam vero at commodi quaerat ut sapiente vitae laudantium deserunt esse enim suscipit harum dolores non mollitia nam aspernatur architecto excepturi aliquam laborum minima! Accusantium officiis qui impedit quam nihil saepe delectus, magnam iusto numquam non commodi, aliquam error ad velit ab! Quidem molestiae enim corporis fugiat voluptates quasi quos dicta fuga, quaerat autem architecto rem cupiditate? Eum exercitationem, voluptatem iste molestias numquam quo minus accusantium quasi ad iusto, in doloremque earum rem nulla sit esse repellat amet architecto rerum dolore ea? Reprehenderit nemo rem vitae, vero unde dolorum explicabo. Velit voluptates ut quo animi unde repudiandae quidem optio suscipit perferendis labore repellendus sint praesentium nihil voluptatibus laudantium sapiente consequatur dolores, ipsam deleniti ab voluptatem eaque eveniet minima! Illum eveniet asperiores optio rerum.</p>
+
+<hr>
+<h1>IMG TAG</h1>
+<!-- image file name should not have blanks, it smtimes work properly on deploy -->
+<img src="shopJoyDownload.png" alt="pic" width="500"> 
+<h1>PICTURE TAG : TO make image responsive</h1>
+<!-- read mdn -->
+<picture>
+<source media="(min-width: 650px)" srcset="shopJoyDownload.png"/>
+<source media="(min-width: 450px)" srcset="shopJoySmall.png">
+<img src="shopJoyDownload.png" alt="">
+</picture>
+<br>
+<hr>
+<br>
+<h1>IMAGE MAP GENERATOR : Clickable part inside Image , click on see more</h1>
+<img src="shopJoySmall.png" usemap="#image-map">
+<map name="image-map">
+<map name="image_map">
+  <area onclick="one()" alt="" title="" href="#para1" coords="637,648,918,713" shape="circle">
+</map>
+</map>
+<hr>
+<h1>MY LIST </h1>
+<h2>Unordered list</h2>
+<h3> List is used to make navbar content,footer etc. , Generally we dont use "list-style-type property" of css </h3>
+<ul style="list-style-type: square;" > 
+ <li>1</li>
+ <li>2</li>
+ <li>3</li>
+ <li>4</li>
+ <li>5</li>
+</ul>
+<hr>
+
+<h2>Oredered List</h2>
+<h3>By default, numbering is present in ol , there is an attribute in OL - type = A/a/1/I/i : It means Numbering of data in list can be A,B,C / a,b,c /1,2,3 / I,II,III / i,ii ,iii</h3>
+<ol type="i" >
+ <li>one</li>
+ <li>two</li>
+ <li>three</li>
+</ol> 
+<hr> 
+<h2>Nested List</h2>
+<ul>
+ <li>Home</li>
+ <li>Offer 
+     <ol type="a" >
+         <li>Diwali Offer</li>
+         <li>80% offer</li>
+     </ol>
+ </li>
+ <li>Services</li>
+</ul> 
+<hr>
+<h2>Data List</h2>
+<h3>Dont use more</h3> 
+<dl>
+ <dt>Ice Tea</dt>
+ <dd>Lemon Ice Tea</dd>
+ <br>
+ <dt>Cold Coffee</dt>
+ <dd>Buttery cold coffee</dd>
+</dl> 
+<h3>Test 1</h3>
+<p>Test 2</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos in dolores autem modi iusto at facilis ipsum vero magnam cumque?</p>
+<hr>
+<h1 style="background-color: aqua;" >INLINE AND BLOCK ELEMENT</h1>
+<span style="background-color: rebeccapurple; color: white;"> Span takes only small space : Inline Element</span>
+<h1><p style="background-color: red;" >P,h1 tag takes whole line : block element</p></h1>
+
+<hr>
+<h1>TABLE SECTION :- </h1>
+<h1>Changing Heading Direction - Horizontal</h1>
+<table>
+   <tr>
+      <th>country</th>
+      <th>country code</th>
+      <th>Email</th> 
+   </tr>
+   <tr>
+       <td>India</td>
+       <td>IN</td>
+       <td>india@google.com</td>
+</tr>
+<tr>
+       <td>United State</td>
+       <td>US</td>
+       <td>us@google.com</td>
+</tr>
+<tr>
+       <td>Canada</td>
+       <td>CN</td>
+       <td>canada@google.com</td>
+</tr>
+<tr>
+       <td>China</td>
+       <td>CH</td>
+       <td>china@google.com</td>
+</tr>
+</table>
+
+<h1>Changing Heading Direction - vertical</h1>
+<table>
+   <tr>
+       <th>Country</th>
+       <td>India</td>
+       <td>United State</td>
+       <td>Canada</td>
+       <td>China</td>
+   </tr>
+   <tr>
+       <th>Country Code</th>
+       <td>IN</td>
+       <td>US</td>
+       <td>CN</td>
+       <td>CH</td>
+   </tr>
+   <tr>
+       <th>Email</th>
+       <td>india@google.com</td>
+       <td>us@google.com</td>
+       <td>canada@google.com</td>
+       <td>china@google.com</td>
+   </tr>
+  </table>
+  <h1>Colgram :Not used now, low browser support   & {ColSpan Attribute of th(table heading) : Sharing Same heading to 2,3,4... columns data}</h1>
+<table>
+   <colgroup> 
+   <col span="2" style="background-color: blueviolet;">
+</colgroup>
+   <tr>
+       <th colspan="2" >Number</th>
+   </tr>
+   <tr>
+       <td>One</td>
+       <td>1</td>
+   </tr>
+   <tr>
+       <td>Two</td>
+       <td>2</td>
+   </tr>
+   <tr>
+       <td>Three</td>
+       <td>3</td>
+   </tr>
+  </table>
+  <h1>TABLE SECTION ENDS HERE:- </h1>
+  <hr>
+  <h1>Forms in HTML : </h1>
+   
+  <!-- In forms , when we submit , all the information in each element sumbit in backend(action tells us about backend like: <form action="/form.php" ) -->
+<form action="" method="get"
+accept-charset="utf-16"  autocomplete="off"
+enctype="multipart/form-data"  
+>  <!--mostly we use method="post" means sending encrypted data to backend ,GET method is not encrypted ,for e.g :google front page where it takes content to be searched from user is decrypted information  -->
+<!--novalidate is also attribute in form which means without validating, checking the data , send it to backend, btt not used  -->
+<!-- Accept-charset means which charset form is accepting
+Enctype means which kind of data - e.g: plain text,images upload etc.  -->
+
+<label for="fname">First Name :</label>  
+<input type="text" name="" id="fname" placeholder="e.g tony" >
+
+  <!-- using lable is a good practice to use in addition with placeholder -->
+<!-- Keeping same id to input tag and label tag helps us to identify lable for input,when clicking on label , input area of that label gets higlighted -->
+
+<br>
+
+<label for="lname">Last Name : </label>
+<input type="text" placeholder="e.g Singh" id="lname" name="" >
+
+<br>
+
+<button type="submit" >Submit</button>
+
+   </form>
+   <h1>Input Types In Html</h1>
+   <form action="" method="post"
+enctype="text/plain" accept-charset="utf-16" autocomplete="off"   
+   >
+   <label for="fname">First Name :</label>  
+   <input type="text" name="" value="Dev" id="fname" placeholder="e.g tony" >
+<br> 
+   <label for="lname">Last Name :</label>  
+   <input type="text" name="" value="Devi" id="lname" placeholder="e.g tony" >
+
+   <!-- <input type="reset" value="Reset"> -->
+<!-- Input Reset works as a button, on clicking it, it reset the value of the form -->
+
+<br>
+
+<label for="email">Email :</label>
+<input type="email" name="" id="email">
+<br>
+<label for="week">Select Week :</label>
+<input type="week" name="" id="week">  
+<!-- week gives a dropdown option where we can choose month,date,year and its tells   -->
+<br>
+
+<select name="editors" id="" multiple>  <!--  multiple attribute is used to select multiple options, to select multiple options, we need to press ctrl while selecting -->
+  <option value="vscode">VsCode</option>
+  <option value="Sublime">Sublime</option>
+  <option value="Turbo">Turbo C++</option>
+  <option value="Dev">Dev</option>
+</select>
+<br>
+<!-- Below input way is not used currently ,rare-->
+<h1>Rarely used writing method - "DataList" </h1>
+<input list="editors" name="editor">
+<datalist id="editors">
+   <option value="vscode">vscode</option>
+   <option value="vs">vs</option>
+   <option value="code">code</option>
+</datalist>
+<br>
+<label for="range">Volume :</label>
+<input type="range" name="" id="range">
+<br>
+<label for="radio"></label>
+<input type="radio" name="" id="radio">
+<!-- Read more about radio -->
+</form>
+<hr>
+<h1>Video Tag</h1>
+     <video autoplay mutedwidth="320" height="240" src="bmi.mp4"></video>
+
+    <h1>Using Source Tag Inside Video Tag</h1> 
+    <video width="320" height="240">
+    <source src="bmi.mp4" >
+</video>
+<audio src=""></audio>
+
+</body>
+<script>
+  function one(){
+      alert("You clicked on see more");
+  }
+</script>
+</html>
